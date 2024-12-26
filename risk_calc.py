@@ -33,24 +33,34 @@ def compute_losses(attacker_rolls, defender_rolls):
 
 def plot_distribution(loss_probs, title, color, axe):
     """
-    Plot a distribution of troop losses on the provided Axes object.
+    Plot a cumulative density function (CDF) of troop losses on the provided Axes object.
     - `loss_probs`: Dictionary mapping losses to probabilities.
     - `title`: Title of the plot.
     - `color`: Color of the bars.
     - `axe`: Matplotlib Axes object to draw the plot.
     """
-    losses = list(loss_probs.keys())
-    probabilities = list(loss_probs.values())
+    # Sort the losses and corresponding probabilities
+    losses = sorted(loss_probs.keys())
+    probabilities = [loss_probs[loss] for loss in losses]
+
+    # Compute the cumulative probabilities (CDF)
+    cumulative_probabilities = [sum(probabilities[:i+1]) for i in range(len(probabilities))]
 
     # Dynamically adjust step size for ticks
     step = 1 if max(losses) < 10 else int(max(losses) / 10)
 
-    # Plot on the provided Axes object
-    axe.bar(losses, probabilities, color=color, alpha=0.7)
+    # Plot the CDF on the provided Axes object
+    axe.step(losses, cumulative_probabilities, color=color, where='post', alpha=0.7)
+
+    # Set labels and title
     axe.set_xlabel("Troop Losses")
-    axe.set_ylabel("Probability")
+    axe.set_ylabel("Cumulative Probability")
     axe.set_title(title)
+
+    # Set ticks for the x-axis
     axe.set_xticks(range(min(losses), max(losses) + 1, step))
+
+    # Show grid for the y-axis
     axe.grid(axis="y", linestyle="--", alpha=0.7)
 
 
