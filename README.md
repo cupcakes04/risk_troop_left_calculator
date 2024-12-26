@@ -7,6 +7,8 @@ should be able to run on normal office desktop settings
 
 it might be a bit slow but pls just click 'submit' once, **dont worry if it says not responding**, especially at higher numbers like 600 v 222, its just running pretty slow (depending on your CPU)
 
+also, i want an outlet to complain why i lose 8 on a 5, apparently its a 10% chance, fk u TR
+
 ## exe file
 https://1drv.ms/f/s!Ah1D4WHSiXWBle4-KxzNrgJdhqTOJA?e=ZZhR3W
 
