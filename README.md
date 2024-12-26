@@ -3,7 +3,7 @@ calculates the troop loss for True Random
 
 should be able to run on normal office desktop settings
 
-its pretty slow and just click 'submit' once, dont worry if it says not responding, because at higher numbers like 600 v 222, it will run pretty slow (depending on your CPU)
+it might be a bit slow and just click 'submit' once, dont worry if it says not responding, especially at higher numbers like 600 v 222, it will run pretty slow (depending on your CPU)
 
 ## exe file
 https://1drv.ms/f/s!Ah1D4WHSiXWBle4-KxzNrgJdhqTOJA?e=ZZhR3W
