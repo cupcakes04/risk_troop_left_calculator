@@ -1,5 +1,7 @@
 # risk_troop_left_calculator
-calculates the troop loss for True Random
+![image](https://github.com/user-attachments/assets/a358ffac-2b79-45d5-82c3-8a41492895a5)
+
+calculates the troop loss for True Random, probability of **losing at least this much troops**
 
 should be able to run on normal office desktop settings
 
